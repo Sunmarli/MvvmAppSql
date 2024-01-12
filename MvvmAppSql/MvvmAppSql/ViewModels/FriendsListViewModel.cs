@@ -4,15 +4,10 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
-using System.Threading.Tasks;
-using Xamarin.Essentials;
-using System.IO;
-using System.Reflection;
+
 using MvvmAppSql.Views;
 
 namespace MvvmAppSql.ViewModels
-
-
 {
     public class FriendsListViewModel : INotifyPropertyChanged
     {
@@ -125,8 +120,6 @@ namespace MvvmAppSql.ViewModels
                     Navigation.PushAsync(new FriendPage(tempFriend));
                 }
             }
-
-
         }
 
         private void SaveFriend(object friendobj)

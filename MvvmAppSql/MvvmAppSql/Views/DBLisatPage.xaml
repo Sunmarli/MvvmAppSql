@@ -11,7 +11,8 @@
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding Name}" FontSize="Medium" />
+                                    <Label Text="{Binding Name}" FontSize="Medium"  HorizontalOptions="Start"/>
+                                   
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

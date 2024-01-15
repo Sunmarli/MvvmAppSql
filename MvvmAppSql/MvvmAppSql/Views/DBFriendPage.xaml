@@ -7,14 +7,19 @@
         <StackLayout>
             <Label Text="Nimi:" />
             <Entry Text="{Binding Name}" />
-            <Label Text="Email:" />
-            <Entry Text="{Binding Phone}" />
             <Label Text="Phone:" />
+            <Entry x:Name="Phone" Text="{Binding Phone}" />
+            <Label Text="Select BirthDate:" />
+            <DatePicker x:Name="datePicker" Date="{Binding Birthday}" />
+            <Label Text="Age:" />
             <Entry Text="{Binding Age}" />
+            <Label Text="Saada Sms:" />
+            <Entry x:Name="text" Text="text" Placeholder="Kirjuta siia text"/>
             <StackLayout Orientation="Horizontal">
                 <Button x:Name="Salvesta" Text="Salvesta" Clicked="Salvesta_Clicked" />
                 <Button x:Name="Kustuta" Text="Kustuta" Clicked="Kustuta_Clicked" />
                 <Button x:Name="Loobu" Text="Loobu" Clicked="Loobu_Clicked" />
+                <Button x:Name="sms_btn" Text="Saada sms" Clicked="sms_btn_Clicked" />
             </StackLayout>
         </StackLayout>
 

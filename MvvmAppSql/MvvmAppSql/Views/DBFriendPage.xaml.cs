@@ -1,12 +1,10 @@
 ﻿using MvvmAppSql.Models;
+using Plugin.Messaging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static Xamarin.Essentials.Permissions;
 
 namespace MvvmAppSql
 {
@@ -40,7 +38,21 @@ namespace MvvmAppSql
 				}
 				this.Navigation.PopAsync();
 			}
-		}
+			void sms_btn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            var sms = CrossMessaging.Current.SmsMessenger;
+
+            if (sms.CanSendSms)
+            {
+                string phoneNumber = Phone.Text;  // Get the phone number from the entry field
+                string messageText = text.Text;   // Get the text message from the entry field
+
+                sms.SendSms(phoneNumber, messageText);
+            }
+        }
 
 
-	}
+    }
+
+
+}

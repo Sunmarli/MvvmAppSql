@@ -74,6 +74,19 @@ namespace MvvmAppSql.ViewModels
 			}
 		}
 
+        public string Birthday
+        {
+            get { return Friend.Birthday; }
+            set
+            {
+                if (Friend.Birthday != value)
+                {
+                    Friend.Birthday = value;
+                    OnPopertyChanged("Birthday");
+                }
+            }
+        }
+
 
 
         public bool IsValid

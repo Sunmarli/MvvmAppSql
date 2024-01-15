@@ -34,5 +34,6 @@ namespace MvvmAppSql
 			friendPage.BindingContext = friend;
 			await Navigation.PushAsync(friendPage);
 		}
+
 	}
 }

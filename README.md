@@ -1,3 +1,3 @@
-<img width="329" alt="12" src="https://github.com/Sunmarli/MvvmAppSql/assets/118188337/bc9365f7-815b-499e-beca-e8874728b366">
-<img width="435" alt="13" src="https://github.com/Sunmarli/MvvmAppSql/assets/118188337/32d163f2-44bb-49eb-9611-3d64d764496a">
+![2](https://github.com/Sunmarli/MvvmAppSql/assets/118188337/0318c08d-f2ad-4a2e-991e-b8c88071a66e)
+![1](https://github.com/Sunmarli/MvvmAppSql/assets/118188337/bc0e2e1f-d9ef-47cc-a661-554ac5ae2e80)
 
